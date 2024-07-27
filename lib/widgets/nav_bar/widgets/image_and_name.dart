@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
+import 'package:portfolio/core/widgets/my_image.dart';
 
 class ImageAndName extends StatelessWidget {
   const ImageAndName({
@@ -10,18 +11,7 @@ class ImageAndName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          width: 48,
-          height: 48,
-          clipBehavior: Clip.antiAlias,
-          decoration: const BoxDecoration(
-            shape: BoxShape.circle,
-          ),
-          child: Image.asset(
-            'assets/images/photo.jpg',
-            fit: BoxFit.cover,
-          ),
-        ),
+        MyImage(),
         const SizedBox(
           width: 12,
         ),
@@ -34,3 +24,4 @@ class ImageAndName extends StatelessWidget {
     );
   }
 }
+
