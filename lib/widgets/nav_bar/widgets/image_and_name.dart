@@ -9,19 +9,18 @@ class ImageAndName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        MyImage(),
-        const SizedBox(
+        MyImage(size: 52),
+        SizedBox(
           width: 12,
         ),
-        const CustomText(
+        CustomText(
           'Ali El-Saka',
-          fontSize: 16,
-          fontWeight: FontWeight.w700,
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
         )
       ],
     );
   }
 }
-

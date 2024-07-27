@@ -9,6 +9,7 @@ class NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomText(
       title,
+      fontSize: 16,
       fontWeight: FontWeight.w600,
     );
   }

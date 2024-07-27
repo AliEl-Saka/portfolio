@@ -15,7 +15,7 @@ class HomeView extends StatelessWidget {
             : null,
         drawerEnableOpenDragGesture: false,
         body: const Column(
-          children: [ResponsiveNavBar()],
+          children: [ResponsiveNavBar(),],
         ),
       ),
     );
