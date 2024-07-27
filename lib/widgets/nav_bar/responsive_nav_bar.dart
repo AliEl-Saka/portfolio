@@ -13,13 +13,10 @@ class ResponsiveNavBar extends StatelessWidget {
       key: globalKey,
         height: 92,
         color: Colors.white,
-        child: Align(
-          alignment: Alignment.center,
-          child: ScreenTypeLayout.builder(
-            desktop: (context) => const WebsiteTabletNavBar(),
-            tablet: (context) => const WebsiteTabletNavBar(),
-            mobile: (context) => const MobileNavBar(),
-          ),
+        child: ScreenTypeLayout.builder(
+          desktop: (context) => const WebsiteTabletNavBar(),
+          tablet: (context) => const WebsiteTabletNavBar(),
+          mobile: (context) => const MobileNavBar(),
         ));
   }
 }
