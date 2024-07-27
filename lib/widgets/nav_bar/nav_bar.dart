@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/nav_bar/widgets/image_and_name.dart';
 import 'package:portfolio/widgets/nav_bar/widgets/sections.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -13,8 +14,8 @@ class NavBar extends StatelessWidget {
       child: Align(
         alignment: Alignment.center,
         child: ConstrainedBox(
-          constraints:
-              BoxConstraints(maxWidth: MediaQuery.of(context).size.width - 150),
+          constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width / 1.25),
           child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [ImageAndName(), Sections()],
