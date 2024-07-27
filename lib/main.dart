@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/views/homw_view.dart';
+import 'package:portfolio/views/home_view.dart';
 
 void main() {
   runApp(PortfolioWebsite());
