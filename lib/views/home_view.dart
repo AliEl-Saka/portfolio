@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/nav_bar/nav_bar.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -6,7 +7,9 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.indigo,
+      body: Column(
+        children: [NavBar()],
+      ),
     );
   }
 }
