@@ -16,7 +16,7 @@ class CustomDrawerHeader extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           Opacity(
-            opacity: 0.05,
+            opacity: 0.3,
             child: DrawerHeaderBackGroundPattern(),
           ),
           DrawerHeaderContent()

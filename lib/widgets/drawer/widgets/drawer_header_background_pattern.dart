@@ -8,7 +8,7 @@ class DrawerHeaderBackGroundPattern extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      'assets/images/drawer header background pattern.png',
+      'assets/images/home background pattern.png',
       fit: BoxFit.cover,
       width: double.infinity,
       height: double.infinity,
