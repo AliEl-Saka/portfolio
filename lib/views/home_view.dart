@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/views/sections/about_section.dart';
 import 'package:portfolio/views/sections/home_section.dart';
 import 'package:portfolio/widgets/drawer/navigation_drawer.dart';
 import 'package:portfolio/widgets/nav_bar/responsive_nav_bar.dart';
@@ -22,6 +23,7 @@ class HomeView extends StatelessWidget {
             children: [
               ResponsiveNavBar(globalKey: responsiveNavBarKey),
               HomeSection(responsiveNavBarKey: responsiveNavBarKey),
+              const AboutSection()
             ],
           ),
         ),
