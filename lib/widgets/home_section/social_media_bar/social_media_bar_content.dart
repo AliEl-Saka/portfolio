@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:portfolio/widgets/home_section/social_media_bar/social_media_item.dart';
 
 class SocialMediaBarContent extends StatelessWidget {
   const SocialMediaBarContent({
@@ -8,23 +8,19 @@ class SocialMediaBarContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       mainAxisAlignment: MainAxisAlignment.center,
       mainAxisSize: MainAxisSize.min,
       children: [
-        SvgPicture.asset(
-          'assets/images/social icons/github.svg',
-          height: 42,
-          width: 42,
-        ),
-        const SizedBox(
+        SocialMediaItem(
+            link: 'https://github.com/AliEl-Saka',
+            svgIcon: 'assets/images/social icons/github.svg'),
+        SizedBox(
           height: 12,
         ),
-        SvgPicture.asset(
-          'assets/images/social icons/linkedin.svg',
-          height: 42,
-          width: 42,
-        ),
+        SocialMediaItem(
+            link: 'https://www.linkedin.com/in/ali-el-saka-95a752273/',
+            svgIcon: 'assets/images/social icons/linkedin.svg'),
       ],
     );
   }
