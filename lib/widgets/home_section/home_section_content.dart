@@ -32,40 +32,42 @@ class HomeSectionContent extends StatelessWidget {
                 : 24;
         double downloadCVButtonFontSize = isMobile ? 16 : 18;
         return CenteredView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CustomText(
-                "HEY, I'M ALI EL-SAKA",
-                fontSize: mainTextSize,
-                fontWeight: FontWeight.w700,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(
-                height: 18,
-              ),
-              LayoutBuilder(builder: (context, constraints) {
-                return ConstrainedBox(
-                  constraints: BoxConstraints(
-                      maxWidth: isDesktop
-                          ? constraints.maxWidth / 1.3
-                          : double.infinity),
-                  child: CustomText(
-                    'A Dedicated Mobile App Developer crafting intuitive and high-performance mobile applications that drive user engagement and contribute to the overall success of the product.',
-                    fontWeight: FontWeight.w400,
-                    fontSize: secondaryTextSize,
-                    fontColor: Colors.black.withOpacity(0.7),
-                    textAlign: TextAlign.center,
-                  ),
-                );
-              }),
-              const SizedBox(
-                height: 36,
-              ),
-              DownloadCVButton(
-                fontSize: downloadCVButtonFontSize,
-              )
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CustomText(
+                  "HEY, I'M ALI EL-SAKA",
+                  fontSize: mainTextSize,
+                  fontWeight: FontWeight.w700,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 18,
+                ),
+                LayoutBuilder(builder: (context, constraints) {
+                  return ConstrainedBox(
+                    constraints: BoxConstraints(
+                        maxWidth: isDesktop
+                            ? constraints.maxWidth / 1.3
+                            : double.infinity),
+                    child: CustomText(
+                      'A Dedicated Mobile App Developer crafting intuitive and high-performance mobile applications that drive user engagement and contribute to the overall success of the product.',
+                      fontWeight: FontWeight.w400,
+                      fontSize: secondaryTextSize,
+                      fontColor: Colors.black.withOpacity(0.7),
+                      textAlign: TextAlign.center,
+                    ),
+                  );
+                }),
+                const SizedBox(
+                  height: 36,
+                ),
+                DownloadCVButton(
+                  fontSize: downloadCVButtonFontSize,
+                )
+              ],
+            ),
           ),
         );
       },
