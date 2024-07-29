@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/home_section/social_media_bar/social_media_item.dart';
+import 'package:portfolio/widgets/home_section/social_media_bar/widgets/social_media_item.dart';
 
 class SocialMediaBarContent extends StatelessWidget {
   const SocialMediaBarContent({

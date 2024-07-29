@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
-import 'package:portfolio/core/widgets/custom_text.dart';
+import 'package:portfolio/widgets/about_section/content.dart';
 import 'package:portfolio/widgets/about_section/header.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -21,9 +21,9 @@ class AboutSection extends StatelessWidget {
             children: [
               AboutSectionHeader(),
               SizedBox(
-                height: 32,
+                height: 72,
               ),
-             
+              AboutSectionContent()
             ],
           ))),
         );

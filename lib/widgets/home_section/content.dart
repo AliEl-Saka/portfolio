@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
+import 'package:portfolio/core/widgets/custom_button.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
 import 'package:portfolio/core/widgets/section_secondary_text.dart';
-import 'package:portfolio/widgets/home_section/download_cv_button.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeSectionContent extends StatelessWidget {
@@ -46,8 +46,10 @@ class HomeSectionContent extends StatelessWidget {
                 const SizedBox(
                   height: 36,
                 ),
-                DownloadCVButton(
+                CustomButton(
                   fontSize: downloadCVButtonFontSize,
+                  buttonName: 'DOWNLOAD CV',
+                  width: 32,
                 )
               ],
             ),

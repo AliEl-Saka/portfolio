@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/home_section/social_media_bar/content.dart';
-import 'package:portfolio/widgets/home_section/social_media_bar/decoration.dart';
+import 'package:portfolio/widgets/home_section/social_media_bar/widgets/content.dart';
+import 'package:portfolio/widgets/home_section/social_media_bar/widgets/decoration.dart';
 
 class SocialMediaBar extends StatelessWidget {
   const SocialMediaBar({
