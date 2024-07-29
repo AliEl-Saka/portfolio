@@ -9,7 +9,8 @@ class SkillsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Wrap(
       direction: Axis.horizontal,
-      spacing: 8.0,
+      runSpacing: 8,
+      spacing: 8,
       children: List.generate(
         skills.length,
         (index) => SkillItem(skill: skills[index]),
