@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/about_section/content_widgets/about_me.dart';
-import 'package:portfolio/widgets/about_section/content_widgets/skills.dart';
+import 'package:portfolio/widgets/about_section/content_widgets/responsive/desktop.dart';
+import 'package:portfolio/widgets/about_section/content_widgets/responsive/mobile_tablet.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class AboutSectionContent extends StatelessWidget {
   const AboutSectionContent({
@@ -9,19 +10,17 @@ class AboutSectionContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: AboutMe(),
-        ),
-        SizedBox(
-          width: 48,
-        ),
-        Expanded(child: Skills())
-      ],
+    return ResponsiveBuilder(
+      builder: (context, sizingInformation) {
+        bool isMobile =
+            sizingInformation.deviceScreenType == DeviceScreenType.mobile;
+        bool isTablet =
+            sizingInformation.deviceScreenType == DeviceScreenType.tablet;
+
+        return isMobile || isTablet
+            ? const MobileTabletAboutSectionContent()
+            : const DesktopAboutSectionContent();
+      },
     );
   }
 }
-
-
