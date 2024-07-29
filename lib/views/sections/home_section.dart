@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/home_section/home_seciton_decoration.dart';
-import 'package:portfolio/widgets/home_section/home_section_content.dart';
+import 'package:portfolio/widgets/home_section/decoration.dart';
+import 'package:portfolio/widgets/home_section/content.dart';
 import 'package:portfolio/widgets/home_section/social_media_bar/social_media_bar.dart';
 
 class HomeSection extends StatelessWidget {

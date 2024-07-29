@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
+import 'package:portfolio/core/widgets/section_secondary_text.dart';
 import 'package:portfolio/widgets/home_section/download_cv_button.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -17,19 +18,12 @@ class HomeSectionContent extends StatelessWidget {
             sizingInformation.deviceScreenType == DeviceScreenType.mobile;
         bool isTablet =
             sizingInformation.deviceScreenType == DeviceScreenType.tablet;
-        bool isDesktop =
-            sizingInformation.deviceScreenType == DeviceScreenType.desktop;
 
         double mainTextSize = isMobile
             ? 48
             : isTablet
                 ? 58
                 : 64;
-        double secondaryTextSize = isMobile
-            ? 18
-            : isTablet
-                ? 20
-                : 24;
         double downloadCVButtonFontSize = isMobile ? 16 : 18;
         return CenteredView(
           child: SingleChildScrollView(
@@ -45,21 +39,10 @@ class HomeSectionContent extends StatelessWidget {
                 const SizedBox(
                   height: 18,
                 ),
-                LayoutBuilder(builder: (context, constraints) {
-                  return ConstrainedBox(
-                    constraints: BoxConstraints(
-                        maxWidth: isDesktop
-                            ? constraints.maxWidth / 1.3
-                            : double.infinity),
-                    child: CustomText(
+                const SectionSecondaryText(
+                  text:
                       'A Dedicated Mobile App Developer crafting intuitive and high-performance mobile applications that drive user engagement and contribute to the overall success of the product.',
-                      fontWeight: FontWeight.w400,
-                      fontSize: secondaryTextSize,
-                      fontColor: Colors.black.withOpacity(0.7),
-                      textAlign: TextAlign.center,
-                    ),
-                  );
-                }),
+                ),
                 const SizedBox(
                   height: 36,
                 ),

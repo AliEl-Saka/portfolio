@@ -9,7 +9,7 @@ class DownloadCVButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 40.screenWidth,
+      width: 32.screenWidth,
       decoration: BoxDecoration(
           color: Colors.indigo, borderRadius: BorderRadius.circular(4)),
       child: Padding(

@@ -24,7 +24,7 @@ class HomeView extends StatelessWidget {
               ResponsiveNavBar(globalKey: responsiveNavBarKey),
               HomeSection(responsiveNavBarKey: responsiveNavBarKey),
               const SizedBox(
-                height: 24,
+                height: 48,
               ),
               const AboutSection()
             ],
