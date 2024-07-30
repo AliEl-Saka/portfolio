@@ -15,7 +15,7 @@ class Footer extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FooterContent(),
+            ResponsiveFooterContent(),
             Divider(),
             FooterCopyright(),
           ],

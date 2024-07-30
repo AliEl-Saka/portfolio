@@ -16,31 +16,27 @@ class FooterCopyright extends StatelessWidget {
           const CustomText(
             '© Copyright 2024 . Made with Flutter by Ali El-Saka',
             fontSize: 12,
+            textAlign: TextAlign.center,
             fontWeight: FontWeight.w400,
             fontColor: Colors.white,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Flexible(
-                child: CustomText(
-                  'UI design from : ',
+              const CustomText(
+                'UI design from : ',
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+                fontColor: Colors.white,
+              ),
+              GestureDetector(
+                onTap: () => launchURL(link: 'https://dopefolio.netlify.app/'),
+                child: const CustomText(
+                  'Dopefolio',
+                  underLine: true,
                   fontSize: 12,
                   fontWeight: FontWeight.w400,
                   fontColor: Colors.white,
-                ),
-              ),
-              Flexible(
-                child: GestureDetector(
-                  onTap: () =>
-                      launchURL(link: 'https://dopefolio.netlify.app/'),
-                  child: const CustomText(
-                    'Dopefolio by Ram Maheshwari',
-                    underLine: true,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                    fontColor: Colors.white,
-                  ),
                 ),
               ),
             ],

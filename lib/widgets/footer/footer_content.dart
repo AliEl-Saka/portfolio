@@ -1,27 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/footer/content/footer_info.dart';
-import 'package:portfolio/widgets/footer/content/footer_social.dart';
+import 'package:portfolio/widgets/footer/content_widget/responsive_content/destop_tablet.dart';
+import 'package:portfolio/widgets/footer/content_widget/responsive_content/mobile.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
-class FooterContent extends StatelessWidget {
-  const FooterContent({
-    super.key,
-  });
+class ResponsiveFooterContent extends StatelessWidget {
+  const ResponsiveFooterContent({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(vertical: 64),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          FooterInfo(),
-          SizedBox(
-            width: 48,
-          ),
-          FooterSocial(),
-        ],
-      ),
+    return ResponsiveBuilder(
+      builder: (context, sizingInformation) {
+        bool isMobile =
+            sizingInformation.deviceScreenType == DeviceScreenType.mobile;
+        return isMobile
+            ? const MobileFooterContent()
+            : const DesktopTabletFooterContent();
+      },
     );
   }
 }
