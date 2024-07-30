@@ -3,8 +3,12 @@ import 'package:portfolio/core/widgets/custom_text.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class SectionSecondaryText extends StatelessWidget {
-  const SectionSecondaryText({super.key, required this.text});
+  const SectionSecondaryText(
+      {super.key, required this.text, this.textColor, this.textAlign,this.textSize});
   final String text;
+  final Color? textColor;
+  final TextAlign? textAlign;
+  final double? textSize;
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +34,9 @@ class SectionSecondaryText extends StatelessWidget {
             child: CustomText(
               text,
               fontWeight: FontWeight.w400,
-              fontSize: headerTextSize,
-              fontColor: Colors.black.withOpacity(0.8),
-              textAlign: TextAlign.center,
+              fontSize: textSize ?? headerTextSize,
+              fontColor: textColor ?? Colors.black.withOpacity(0.8),
+              textAlign: textAlign ?? TextAlign.center,
             ),
           );
         });

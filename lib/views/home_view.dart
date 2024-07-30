@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/views/footer.dart';
 import 'package:portfolio/views/sections/about_section.dart';
 import 'package:portfolio/views/sections/home_section.dart';
 import 'package:portfolio/widgets/drawer/navigation_drawer.dart';
-import 'package:portfolio/widgets/nav_bar/responsive_nav_bar.dart';
+import 'package:portfolio/views/nav_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeView extends StatelessWidget {
@@ -21,7 +22,7 @@ class HomeView extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              ResponsiveNavBar(globalKey: responsiveNavBarKey),
+              NavBar(globalKey: responsiveNavBarKey),
               HomeSection(responsiveNavBarKey: responsiveNavBarKey),
               const SizedBox(
                 height: 84,
@@ -30,6 +31,7 @@ class HomeView extends StatelessWidget {
               const SizedBox(
                 height: 84,
               ),
+              const Footer()
             ],
           ),
         ),

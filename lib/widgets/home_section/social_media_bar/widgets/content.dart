@@ -13,14 +13,18 @@ class SocialMediaBarContent extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         SocialMediaItem(
-            link: 'https://github.com/AliEl-Saka',
-            svgIcon: 'assets/images/social icons/github.svg'),
+          link: 'https://github.com/AliEl-Saka',
+          svgIcon: 'assets/images/social icons/github.svg',
+          size: 42,
+        ),
         SizedBox(
           height: 12,
         ),
         SocialMediaItem(
-            link: 'https://www.linkedin.com/in/ali-el-saka-95a752273/',
-            svgIcon: 'assets/images/social icons/linkedin.svg'),
+          link: 'https://www.linkedin.com/in/ali-el-saka-95a752273/',
+          svgIcon: 'assets/images/social icons/linkedin.svg',
+          size: 42,
+        ),
       ],
     );
   }

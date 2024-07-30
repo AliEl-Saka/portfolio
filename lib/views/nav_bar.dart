@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/nav_bar/widgets/responsive/mobile_nav_bar.dart';
-import 'package:portfolio/widgets/nav_bar/widgets/responsive/website_nav_bar.dart';
+import 'package:portfolio/widgets/nav_bar/responsive/mobile_nav_bar.dart';
+import 'package:portfolio/widgets/nav_bar/responsive/website_nav_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class ResponsiveNavBar extends StatelessWidget {
-  const ResponsiveNavBar({super.key,required this.globalKey});
+class NavBar extends StatelessWidget {
+  const NavBar({super.key, required this.globalKey});
   final GlobalKey globalKey;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      key: globalKey,
+        key: globalKey,
         height: 92,
         color: Colors.white,
         child: ScreenTypeLayout.builder(

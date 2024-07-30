@@ -3,12 +3,15 @@ import 'package:flutter_svg/svg.dart';
 import 'package:portfolio/core/utils/launch_url.dart';
 
 class SocialMediaItem extends StatelessWidget {
-  const SocialMediaItem({
-    super.key,
-    required this.link,required this.svgIcon
-  });
+  const SocialMediaItem(
+      {super.key,
+      required this.link,
+      required this.svgIcon,
+      required this.size,this.color});
   final String link;
   final String svgIcon;
+  final double size;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +19,9 @@ class SocialMediaItem extends StatelessWidget {
       onTap: () => launchURL(link: link),
       child: SvgPicture.asset(
         svgIcon,
-        height: 42,
-        width: 42,
+        height: size,
+        width: size,
+        color: color,
       ),
     );
   }

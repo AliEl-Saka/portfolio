@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
-import 'package:portfolio/widgets/nav_bar/widgets/image_and_name.dart';
-import 'package:portfolio/widgets/nav_bar/widgets/sections.dart';
+import 'package:portfolio/widgets/nav_bar/image_and_name.dart';
+import 'package:portfolio/widgets/nav_bar/sections.dart';
 
 class WebsiteTabletNavBar extends StatelessWidget {
   const WebsiteTabletNavBar({
