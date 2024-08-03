@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
 import 'package:portfolio/core/widgets/custom_text_form_field.dart';
 
@@ -21,9 +22,7 @@ class HeaderWithCustomTextField extends StatelessWidget {
           fontSize: 16,
           fontColor: Colors.black.withOpacity(0.7),
         ),
-        const SizedBox(
-          height: 4,
-        ),
+        4.height,
         CustomTextFormField(
           hintText: hintText,
           maxLines: maxLines,

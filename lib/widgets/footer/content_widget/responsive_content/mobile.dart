@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/widgets/footer/content_widget/footer_info.dart';
 import 'package:portfolio/widgets/footer/content_widget/footer_social.dart';
 
@@ -9,19 +10,15 @@ class MobileFooterContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(vertical: 64),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 64),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-           FooterSocial(),
-           SizedBox(
-            height: 32,
-          ),
-          FooterInfo(),
-          
-         
+          const FooterSocial(),
+          32.height,
+          const FooterInfo(),
         ],
       ),
     );

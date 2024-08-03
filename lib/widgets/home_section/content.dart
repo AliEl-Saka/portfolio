@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
 import 'package:portfolio/core/widgets/custom_button.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
@@ -36,16 +37,12 @@ class HomeSectionContent extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(
-                  height: 18,
-                ),
+                12.height,
                 const SectionSecondaryText(
                   text:
                       'A Dedicated Mobile App Developer crafting intuitive and high-performance mobile applications that drive user engagement and contribute to the overall success of the product.',
                 ),
-                const SizedBox(
-                  height: 36,
-                ),
+                36.height,
                 CustomButton(
                   innerHorizontalPadding: 8,
                   fontSize: downloadCVButtonFontSize,

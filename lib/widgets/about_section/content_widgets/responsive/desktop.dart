@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/widgets/about_section/content_widgets/about_me.dart';
 import 'package:portfolio/widgets/about_section/content_widgets/skills.dart';
 
@@ -10,16 +10,14 @@ class DesktopAboutSectionContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(
+        const Expanded(
           child: AboutMe(),
         ),
-        SizedBox(
-          width: 48,
-        ),
-        Expanded(child: Skills())
+        48.width,
+        const Expanded(child: Skills())
       ],
     );
   }

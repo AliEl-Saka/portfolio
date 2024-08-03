@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/widgets/home_section/social_media_bar/widgets/social_media_item.dart';
 
 class SocialMediaBarContent extends StatelessWidget {
@@ -8,19 +9,17 @@ class SocialMediaBarContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       mainAxisSize: MainAxisSize.min,
       children: [
-        SocialMediaItem(
+        const SocialMediaItem(
           link: 'https://github.com/AliEl-Saka',
           svgIcon: 'assets/images/social icons/github.svg',
           size: 36,
         ),
-        SizedBox(
-          height: 12,
-        ),
-        SocialMediaItem(
+        12.height,
+        const SocialMediaItem(
           link: 'https://www.linkedin.com/in/ali-el-saka-95a752273/',
           svgIcon: 'assets/images/social icons/linkedin.svg',
           size: 36,

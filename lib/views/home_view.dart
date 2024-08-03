@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/views/footer.dart';
 import 'package:portfolio/views/sections/about_section.dart';
 import 'package:portfolio/views/sections/contact_section.dart';
@@ -25,13 +26,9 @@ class HomeView extends StatelessWidget {
             children: [
               NavBar(globalKey: responsiveNavBarKey),
               HomeSection(responsiveNavBarKey: responsiveNavBarKey),
-              const SizedBox(
-                height: 84,
-              ),
+              84.height,
               const AboutSection(),
-              const SizedBox(
-                height: 84,
-              ),
+              84.height,
               const ContactSection(),
               const Footer()
             ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/custom_divider.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
 import 'package:portfolio/core/widgets/section_secondary_text.dart';
@@ -22,9 +23,7 @@ class SectionHeader extends StatelessWidget {
           letterSpacing: 6,
         ),
         const CustomDivider(),
-        const SizedBox(
-          height: 24,
-        ),
+       24.height,
         SectionSecondaryText(text: headerSecondaryText),
       ],
     );

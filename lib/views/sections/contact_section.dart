@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
 import 'package:portfolio/core/widgets/decoration.dart';
 import 'package:portfolio/widgets/contact_section/form.dart';
@@ -12,21 +13,15 @@ class ContactSection extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: sectionDecoration(),
-      child: const CenteredView(
+      child: CenteredView(
           child: SingleChildScrollView(
               child: Column(
         children: [
-          SizedBox(
-            height: 72,
-          ),
-          ContactSectionHeader(),
-          SizedBox(
-            height: 72,
-          ),
-          ContactSectionForm(),
-          SizedBox(
-            height: 72,
-          ),
+          72.height,
+          const ContactSectionHeader(),
+          72.height,
+          const ContactSectionForm(),
+          72.height,
         ],
       ))),
     );

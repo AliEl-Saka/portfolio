@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
 import 'package:portfolio/core/widgets/my_image.dart';
 
@@ -9,13 +10,11 @@ class ImageAndName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        MyImage(size: 52),
-        SizedBox(
-          width: 12,
-        ),
-        CustomText(
+        const MyImage(size: 52),
+        12.width,
+        const CustomText(
           'Ali El-Saka',
           fontSize: 20,
           fontWeight: FontWeight.w600,

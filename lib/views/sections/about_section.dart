@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
 import 'package:portfolio/widgets/about_section/content.dart';
 import 'package:portfolio/widgets/about_section/header.dart';
@@ -10,17 +11,15 @@ class AboutSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return SizedBox(
       width: double.infinity,
       child: CenteredView(
           child: SingleChildScrollView(
               child: Column(
         children: [
-          AboutSectionHeader(),
-          SizedBox(
-            height: 72,
-          ),
-          AboutSectionContent()
+          const AboutSectionHeader(),
+          72.height,
+          const AboutSectionContent()
         ],
       ))),
     );

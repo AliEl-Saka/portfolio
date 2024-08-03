@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
 
 class CustomDrawerItem extends StatelessWidget {
@@ -13,7 +14,7 @@ class CustomDrawerItem extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Icon(icon),
-          const SizedBox(width: 8),
+         8.width,
           CustomText(
             title,
             fontWeight: FontWeight.w600,

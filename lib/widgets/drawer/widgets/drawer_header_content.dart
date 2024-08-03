@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
 import 'package:portfolio/core/widgets/my_image.dart';
 
@@ -15,9 +16,7 @@ class DrawerHeaderContent extends StatelessWidget {
         const MyImage(
           size: 84,
         ),
-        const SizedBox(
-          height: 12,
-        ),
+        12.height,
         const CustomText(
           'Ali El-Saka',
           fontColor: Colors.white,

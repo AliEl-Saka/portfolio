@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/widgets/about_section/content_widgets/about_me.dart';
 import 'package:portfolio/widgets/about_section/content_widgets/skills.dart';
 
@@ -9,13 +10,11 @@ class MobileTabletAboutSectionContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         AboutMe(),
-        SizedBox(
-          height: 58,
-        ),
+       58.height,
         Skills()
       ],
     );

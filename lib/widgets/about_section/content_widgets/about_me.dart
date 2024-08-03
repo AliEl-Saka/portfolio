@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/custom_button.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
 import 'package:portfolio/widgets/about_section/content_widgets/about_me_widgets/about_me_rich_text.dart';
@@ -25,13 +26,9 @@ class AboutMe extends StatelessWidget {
               fontSize: 30,
               fontWeight: FontWeight.w600,
             ),
-            const SizedBox(
-              height: 32,
-            ),
+            32.height,
             const AboutMeRichText(),
-            const SizedBox(
-              height: 32,
-            ),
+            32.height,
             CustomButton(
               fontSize: buttonFontSize,
               innerVerticalPadding: 12,
