@@ -9,13 +9,13 @@ class FooterInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomText(
           'Ali EL-Saka',
           fontColor: Colors.white,
-          fontSize: 22,
+          fontSize: 24,
           fontWeight: FontWeight.w700,
         ),
         SizedBox(

@@ -15,7 +15,7 @@ class FooterSocial extends StatelessWidget {
         CustomText(
           'Social',
           fontColor: Colors.white,
-          fontSize: 20,
+          fontSize: 24,
           fontWeight: FontWeight.w700,
         ),
         SizedBox(

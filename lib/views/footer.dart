@@ -11,7 +11,7 @@ class Footer extends StatelessWidget {
     return Container(
       color: Colors.black,
       child: const CenteredView(
-        customCenteredViewHorizontalConstrains: 1.50,
+        customCenteredViewHorizontalConstrains: 1.4,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

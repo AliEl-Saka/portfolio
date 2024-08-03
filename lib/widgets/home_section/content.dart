@@ -47,6 +47,7 @@ class HomeSectionContent extends StatelessWidget {
                   height: 36,
                 ),
                 CustomButton(
+                  innerHorizontalPadding: 8,
                   fontSize: downloadCVButtonFontSize,
                   buttonName: 'DOWNLOAD CV',
                   width: 32,

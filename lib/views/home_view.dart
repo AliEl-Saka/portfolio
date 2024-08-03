@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/views/footer.dart';
 import 'package:portfolio/views/sections/about_section.dart';
+import 'package:portfolio/views/sections/contact_section.dart';
 import 'package:portfolio/views/sections/home_section.dart';
 import 'package:portfolio/widgets/drawer/navigation_drawer.dart';
 import 'package:portfolio/views/nav_bar.dart';
@@ -28,6 +29,10 @@ class HomeView extends StatelessWidget {
                 height: 84,
               ),
               const AboutSection(),
+              const SizedBox(
+                height: 84,
+              ),
+              ContactSection(),
               const SizedBox(
                 height: 84,
               ),
