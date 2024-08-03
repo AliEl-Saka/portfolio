@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/hover_extension.dart';
 import 'package:portfolio/core/widgets/custom_button.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -19,7 +20,7 @@ class ResponsiveContactSubmitButton extends StatelessWidget {
             buttonName: 'Submit',
             innerVerticalPadding: 12,
             width: isMobile ? double.infinity : 18,
-          ),
+          ).showCursorOnHover.moveUpOnHover,
         );
       },
     );

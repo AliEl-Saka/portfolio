@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/hover_extension.dart';
 import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/custom_button.dart';
 import 'package:portfolio/core/widgets/custom_text.dart';
@@ -34,7 +35,7 @@ class AboutMe extends StatelessWidget {
               innerVerticalPadding: 12,
               innerHorizontalPadding: 48,
               buttonName: 'contact',
-            )
+            ).showCursorOnHover.moveUpOnHover
           ],
         );
       },

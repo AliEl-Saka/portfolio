@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/extension/hover_extension.dart';
 import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/centered_view.dart';
 import 'package:portfolio/core/widgets/custom_button.dart';
@@ -48,7 +49,7 @@ class HomeSectionContent extends StatelessWidget {
                   fontSize: downloadCVButtonFontSize,
                   buttonName: 'DOWNLOAD CV',
                   width: 32,
-                )
+                ).showCursorOnHover.moveUpOnHover
               ],
             ),
           ),
