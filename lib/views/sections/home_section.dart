@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/home_section/decoration.dart';
+import 'package:portfolio/core/widgets/decoration.dart';
 import 'package:portfolio/widgets/home_section/content.dart';
 import 'package:portfolio/widgets/home_section/social_media_bar/social_media_bar.dart';
 
@@ -19,7 +19,7 @@ class HomeSection extends StatelessWidget {
           Container(
             height: MediaQuery.of(context).size.height - navBarHeight,
             width: double.infinity,
-            decoration: homeSectionDecoration(),
+            decoration: sectionDecoration(),
             child: const HomeSectionContent(),
           ),
           const Positioned(

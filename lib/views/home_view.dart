@@ -32,7 +32,7 @@ class HomeView extends StatelessWidget {
               const SizedBox(
                 height: 84,
               ),
-              ContactSection(),
+              const ContactSection(),
               const SizedBox(
                 height: 84,
               ),

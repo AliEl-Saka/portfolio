@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-BoxDecoration homeSectionDecoration() {
+BoxDecoration sectionDecoration() {
   return BoxDecoration(
       color: Colors.black.withOpacity(0.05),
       image: DecorationImage(
