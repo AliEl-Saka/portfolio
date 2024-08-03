@@ -15,7 +15,7 @@ class SocialMediaBarContent extends StatelessWidget {
         SocialMediaItem(
           link: 'https://github.com/AliEl-Saka',
           svgIcon: 'assets/images/social icons/github.svg',
-          size: 42,
+          size: 36,
         ),
         SizedBox(
           height: 12,
@@ -23,7 +23,7 @@ class SocialMediaBarContent extends StatelessWidget {
         SocialMediaItem(
           link: 'https://www.linkedin.com/in/ali-el-saka-95a752273/',
           svgIcon: 'assets/images/social icons/linkedin.svg',
-          size: 42,
+          size: 36,
         ),
       ],
     );

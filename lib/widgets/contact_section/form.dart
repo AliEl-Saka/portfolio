@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/extension/sized_box_extension.dart';
 import 'package:portfolio/core/widgets/header_with_custom_text_form_field.dart';
+import 'package:portfolio/widgets/contact_section/form_decoration.dart';
 import 'package:portfolio/widgets/contact_section/responsive_submit_button.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -21,7 +22,7 @@ class ContactSectionForm extends StatelessWidget {
                   : MediaQuery.of(context).size.width / 1.5),
           child: Container(
             padding: const EdgeInsets.all(24),
-            color: Colors.white,
+            decoration: contactFormDecoration(),
             child: Column(
               children: [
                 const HeaderWithCustomTextField(

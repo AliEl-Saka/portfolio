@@ -11,7 +11,7 @@ BoxDecoration socialMediaBarDecoration() {
           color: Colors.grey.withOpacity(0.5),
           spreadRadius: 2,
           blurRadius: 12,
-          offset: const Offset(3, 0), // changes position of shadow
+          offset: const Offset(3, 0), 
         ),
       ],
     );
