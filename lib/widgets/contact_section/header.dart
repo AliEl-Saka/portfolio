@@ -11,6 +11,6 @@ class ContactSectionHeader extends StatelessWidget {
     return const SectionHeader(
         haederMainText: 'CONTACT',
         headerSecondaryText:
-            "Ready to collaborate? Let's discuss how I can bring your project to life.");
+            "Have a project in mind or just want to chat? Feel free to send me a message using the form below. I'll get back to you shortly!");
   }
 }
